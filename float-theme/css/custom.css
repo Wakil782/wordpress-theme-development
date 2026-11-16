@@ -1,0 +1,112 @@
+#wrap{
+    background: #fff;
+    width: 960px;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+}
+
+#branding {
+	background-image: url(../imges/header.gif);
+	background-repeat: no-repeat;
+	background-position: 50% top;
+	float: left;
+	height: 180px;
+	width: 100%;
+}
+
+.logo a {
+    display: block;
+    font-size: 30px;
+    text-indent: -9999em;
+    width: 130px;
+    margin: 14px 0 0 35px;
+}
+
+#tagline {
+    float: left;
+    font-size: 18px;
+    font-style: italic;
+}
+nav  {
+    float: left;
+    width: 960px;
+    white-space: nowrap;
+}
+
+nav #nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    position: relative;
+    z-index: 1;
+}
+nav #nav li {
+   display: inline-block;
+   position: relative;
+}
+
+nav #nav a {
+   display: block;
+   text-decoration: none;
+   padding: 10px 15px;
+}
+nav #nav a:hover {
+   color: #ddd;
+   background-color: #000;
+}
+nav #nav ul {
+   display: none;
+   position:absolute;
+   top: 34px;
+   left: 0;
+   width: 180px;
+   /* z-index: 999999; */
+   padding: 0;
+   margin: 0;
+}
+nav #nav ul li {
+   display: block;
+   border-bottom: 1px solid #d4d4d4;
+   /* float: left; */
+   text-align: left;
+}
+nav #nav li:hover > ul {
+   display: block;
+  
+}
+nav #nav ul ul {
+  left: 100%;
+  top: 0;
+}
+nav #nav ul li:hover ul {
+ display: block;
+}
+
+/* Main Id Here  */
+/*  Main Template here  */
+#main {
+	float: left;
+	padding: 10px;
+	width: 940px;
+}
+#content {
+	float: left;
+	padding: 20px;
+	width: 600px;
+}
+#sidebar {
+	background: #eee;
+	float: right;
+	padding: 0px 20px;
+	width: 240px;
+}
+
+footer {
+    clear: both !important;
+    background: #f4f4f4;
+    padding: 10px;
+    text-align: center;
+}
+

@@ -1,0 +1,447 @@
+/*
+Theme function
+*/
+:root {
+  --pink: #ea1a70;
+}
+img {
+    max-width: 100%;
+}
+
+body {
+  font-family: "Bungee Spice", sans-serif;
+    font-size: 15px;
+    line-height: 1.5em;
+  }
+  p {
+    font-family: "Bungee Spice", sans-serif;
+      font-size: 15px;
+      line-height: 1.5em;
+    }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Oswald", sans-serif;
+    line-height: 1.5em;
+  }
+  a.readmore {
+    background-color: var(--pink);
+    color: #fff;
+    font-size: 15px;
+    text-decoration: navajowhite;
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 10px;
+    transition: 0.5s;
+
+  }
+  a.readmore:hover {
+    background-color: #262626;
+  }
+/*
+Header Area 
+*/
+#body_area {
+  padding: 45px 0;
+}
+#body_area .blog_area {
+  width: 100%;
+  margin-bottom: 15px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0px 0px 10px #ddd;
+}
+#body_area .post_thumb {
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 15px;
+}
+#body_area .post_thumb img {
+  width: 100%;
+  display: block;
+  transition: 0.5s;
+}
+#body_area .post_thumb:hover img {
+transform: scale(1.1);
+}
+
+#body_area .post_details {
+  width: 100%;
+ 
+}
+#body_area .post_details div {
+  width: 100% !important;
+ 
+}
+#body_area .post_details h2 {
+  font-family: "Bungee Spice", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+ 
+}
+#body_area .post_details h2 a{
+color: #262626;
+text-decoration: none;
+transition: 0.5s;
+}
+#body_area .post_details h2 a:hover{
+  color: #Ea1070;
+  
+  }
+
+/* Custom upore */
+#header-area {
+    padding: 15px 0;
+}
+/*
+child sidebar design 
+ */
+ .child_sidebar {
+  margin-bottom: 20px;
+}
+.child_sidebar h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 0;
+  line-height: 1em;
+  border-left: 5px solid  var(--pink);
+  padding-left: 10px;
+}
+.child_sidebar input[type="search"] {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+.child_sidebar button[type="submit"] {
+  background:  var(--pink);
+  border: 1px solid  var(--pink);
+  padding: 10px;
+  margin: 0;
+  color: #fff;
+  transition: 0.5s;
+}
+.child_sidebar button[type="submit"]:hover {
+  background: #262626;
+  border: 1px solid #262626;
+}
+.child_sidebar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+}
+.child_sidebar ul li {
+  display: block;
+  margin-bottom: 5px;
+}
+.child_sidebar ul ul {
+  display: none;
+}
+.child_sidebar ul li a {
+  display: inline-block;
+  color: #262626;
+  text-decoration: none;
+}
+.child_sidebar ul li a:hover {
+  color:  var(--pink);
+}
+.child_sidebar a.tag-cloud-link {
+  color: #fff;
+  background: #262626;
+  display: inline-block;
+  font-size: 12px !important;
+  text-decoration: none;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.child_sidebar a.tag-cloud-link:hover {
+  background:  var(--pink);
+}
+
+/* 
+Ends Here child sidebar */
+/* Footer Area styling
+ */
+
+
+ #footer {
+  background: #292929;
+  padding: 40px 0 20px;
+  color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+#footer .child_sidebar ul li a {
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+/* Footer area styling ends here
+ */
+
+#header-area .col-md-9 ul {
+    font-family: "Oswald", sans-serif;
+    margin: 10px 0 0;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+  }
+  #header-area .col-md-9 ul li {
+    display: inline-block;
+    position: relative;
+  }
+  #header-area .col-md-9 ul li a {
+    color: #262626;
+    padding: 20px 10px;
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  #header-area .col-md-9 ul li a:hover {
+    background:  var(--pink);
+    color: #fff;
+  }
+  
+  /*Dropdown Menu*/
+  #header-area .col-md-9 ul li ul {
+    background: #262626 none repeat scroll 0 0;
+    left: -99999px;
+    margin: 0;
+    position: absolute;
+    text-align: left;
+    top: 62px;
+    width: 200px;
+    z-index: 9999;
+  }
+  #header-area .col-md-9 ul li:hover ul {
+    left: 0px;
+  }
+  #header-area .col-md-9 ul li ul li {
+    display: block;
+  }
+  #header-area .col-md-9 ul li ul li a {
+    color: #fff;
+    padding: 8px 10px;
+  }
+  #header-area .col-md-9 ul li ul li a:hover {
+    background: #ddd;
+    color: #262626;
+  }
+  #header-area .col-md-9 ul li:hover a {
+    background:  var(--pink);
+    color: #fff;
+  }
+  #header-area .col-md-9 ul li:hover ul li a {
+    background: none;
+    color: #fff;
+  }
+  
+  /*Sub Dropdown Menu*/
+  #header-area .col-md-9 ul li ul ul {
+    left: -99999px;
+    top: 0;
+    position: absolute;
+  }
+  #header-area .col-md-9 ul li:hover ul li ul {
+    left: -999999px;
+  }
+  #header-area .col-md-9 ul li ul li:hover ul {
+    left: 200px;
+  }
+  #header_area .col-md-9 ul li ul li:hover a {
+    background:  var(--pink);
+    color: #fff;
+  }
+  #header-area .col-md-9 ul ul li:hover ul li a {
+    background: #262626;
+    color: #fff;
+  }
+  #header-area .col-md-9 ul ul li ul li a:hover {
+    background:  var(--pink);
+    color: #fff;
+  }
+  #header-area.left_menu .row {
+    display: flex;
+  }
+  
+  #header-area.left_menu .col-md-3 {
+    order: 2;
+  }
+  #header-area.left_menu .col-md-9 {
+    order: 1;
+  }
+  #header-area.left_menu .col-md-9 ul {
+    text-align: left;
+  }
+  
+  #header-area.center_menu .col-md-3 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  #header-area.center_menu .col-md-9 {
+    width: 100%;
+  }
+  #header-area.center_menu .col-md-9 ul {
+    text-align: center;
+  }
+  #header-area.center_menu .col-md-9 ul ul {
+    text-align: left;
+  }
+  /* archive area */
+  #archive_title {
+    background:  var(--pink);
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  #archive_title h1 {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+
+
+
+/* archive ends here */
+  /* Copy Right Section Design */
+  
+#copyright {
+  background-color: #292929;
+  color: #fff;
+  font-size: 15px;
+  padding: 20px 0;
+  text-align: center;
+}
+#copyright p {
+  margin: 0;
+}
+#copyright p a {
+  color:  var(--pink);
+}
+#copyright p a:hover {
+  text-decoration: underline;
+}
+/* Comments area styling */
+
+#comments_area h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+#comments_area label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 18px;
+}
+#comments_area input[type="checkbox"] {
+  display: inline-block;
+  width: auto;
+}
+#comments_area textarea,
+#comments_area input {
+  border: 1px solid #ddd;
+  width: 100%;
+  padding: 15px;
+}
+#comments_area textarea {
+  min-height: 150px;
+}
+
+
+/*===========================================
+  404 Area Styling
+===========================================*/
+.error_page {
+  padding: 50px 0;
+  text-align: center;
+}
+.error_page h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #262626;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+.error_page p {
+  color:  var(--pink);
+  margin-bottom: 0;
+}
+.error_page a.homepage {
+  background:  var(--pink);
+  color: #fff;
+  margin-bottom: 0;
+  text-decoration: none;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 10px 25px;
+  display: inline-block;
+  margin-top: 20px;
+  transition: 0.5s;
+}
+.error_page a.homepage:hover {
+  background: #262626;
+}
+.error_search {
+  margin-bottom: 15px;
+}
+.error_search input[type="text"] {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+.error_search input[type="submit"] {
+  background:  var(--pink);
+  border: 1px solid  var(--pink);
+  padding: 10px;
+  margin: 0;
+  color: #fff;
+  transition: 0.5s;
+}
+.error_search input[type="submit"]:hover {
+  background: #262626;
+  border: 1px solid #262626;
+}
+/*=
+/* 404 design */
+/*Theme Service area styling*/
+#service_area {
+  padding: 45px 0;
+}
+#service_area .child_service {
+  background: #ddd;
+  box-shadow: 0 0 10px #ddd;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+#homepage_post .child_home ul {
+  text-align: center;
+}
+#homepage_post .child_home ul li {
+  display: inline-block;
+  background: #fff;
+  padding: 10px;
+  box-shadow: 0 0 10px #ddd;
+  margin: 0 10px;
+  border-radius: 10px;
+}
+#homepage_post .child_home ul li a {
+  font-size: 25px;
+  color: #262626;
+  display: block;
+  margin: 15px 0;
+  text-decoration: none;
+}
+

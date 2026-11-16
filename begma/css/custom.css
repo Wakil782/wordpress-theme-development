@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    height:73px;
+} 
+
+#begma_header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: #fff;
+	z-index: 999;
+	box-shadow: 0 13px 20px rgba(0,0,0,.08);
+}
+
+#begma_header .begma_google_font {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 12px;
+}
+ #begma_header .begma_google_font i {
+    padding: 10px;
+    border-radius: 25px; 
+    background: #E9E9E9;
+    color: #838383;
+    cursor: pointer; 
+    
+} 
+.begma_menu {
+    height: 100%;
+}
+.begma_menu #main_menu_begma {
+	height: 100%;
+	list-style: none;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 160px;
+}
+.begma_menu #main_menu_begma li{
+    position: relative;
+}
+   /* hover color #192E58 */
+
+.begma_menu #main_menu_begma li a {
+	color: #192E58;
+	font-family: "Lato", sans-serif;
+	text-decoration: none;
+	padding: 10px 11px;
+    white-space: nowrap;
+	/* transition: all 0.3s; */
+}
+.begma_menu #main_menu_begma li a:hover {
+	color: #192E58;
+}
+.begma_menu #main_menu_begma li ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 9999;
+    list-style: none;
+    box-sizing: border-box;
+	background-color: rgba(255, 255, 255, 0.6);
+	min-width: 200px;
+	margin: 0;
+	padding: 6px 3px;
+}
+.begma_menu #main_menu_begma li ul li {
+	padding: 10px 0;
+}
+.begma_menu #main_menu_begma li ul{
+    visibility: hidden;
+    opacity: 0;
+}
+
+.begma_menu #main_menu_begma li:hover > ul{
+    visibility: visible;
+    opacity: 1;
+}
+
+.begma_menu .menu-item-has-children > a::after{
+    content: "\f107";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    width: 12px;
+    text-align: center;
+    margin-left: 6px;
+    display: inline-block;
+    transition: transform .3s; 
+}
+
+.begma_menu .menu-item-has-children:hover > a::after{
+    transform: rotate(180deg);
+}
+
+
+/* স্লাইডারের মেইন কন্টেইনার—যার উপর ক্লিপ পাথ এবং পজিশন সেট করা হয়েছে */
+/* মেইন কন্টেইনার শুধু রিলেটিভ থাকবে, এখানে কোনো ক্লিপ-পাথ হবে না */
+.begma_image {
+    position: relative;
+    width: 100%;
+}
+
+/* Owl Carousel এর মেইন স্লাইড বা স্টেজ এরিয়া—এটিকে আমরা বাঁকা করব */
+#owl_begma_caressol .owl-stage-outer {
+    width: 100%;
+    height: 572px; /* আপনার পছন্দমতো হাইট */
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 100px), 0 100%);
+    overflow: hidden;
+}
+
+/* ভেতরের ইমেজগুলোকে সম্পূর্ণ কন্টেইনার জুড়ে পারফেক্টলি রাখার জন্য */
+#owl_begma_caressol .owl-item img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+}
+
+/* =====================================
+   বাটন সেকশন (এবার পজিশন পারফেক্টলি কাজ করবে)
+===================================== */
+
+/* বাটন দুইটির মেইন কন্টেইনারকে পজিশন করার জন্য */
+/* বাটন দুইটির মেইন কন্টেইনারকে পজিশন করার জন্য */
+.begma_image .owl-nav {
+	position: absolute;
+	bottom: 14px;
+	right: 40px;
+	display: flex;
+	gap: 15px;
+	z-index: 999;
+}
+/* বাটন দুটির সাধারণ স্টাইল */
+.begma_image .owl-nav button.owl-prev,
+.begma_image .owl-nav button.owl-next {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 45px;         
+    height: 45px;        
+    background-color: #46B6CD !important; 
+    color: #ffffff !important;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+    font-weight: bold;
+}
+
+/* বাটনের ভেতরের আইকন বা টেক্সটের সাইজ */
+.begma_image .owl-nav button span {
+    font-size: 30px;
+    line-height: 0;      
+    padding: 0;  
+    text-align: center;        
+}
+
+/* হোভার ইফেক্ট */
+.begma_image .owl-nav button:hover {
+    background-color: #3598AB !important;
+}
+
+/* begma_innumerable design */
+
+#begma_innumerable {
+    padding: 100px 0;
+    margin: 0 auto;
+}
+
+#begma_innumerable .innumerable_bangladesh {
+    display: flex;
+    justify-content: space-between;
+}
+
+#begma_innumerable .innumerable_bangladesh h1{
+    margin-bottom: 20px;
+}
+
+
+/* 1A2F56 */
+
+.title {
+	font-family: "Lato", sans-serif;
+	font-size: 32px;
+	color: #1A2F56;
+}
+ 
+.btn {
+    padding: 12px 0;
+	width: 200px;
+	text-align: center;
+	font-family: "Lato", sans-serif;
+	margin-bottom: 20px;
+	background-color: #1A2F56;
+	color: #ffffff;
+	border: none;
+	outline: none;
+	font-size: 20px;
+}
+
+#begma_innumerable .innumerable_bangladesh button {
+	padding: 12px 0;
+	width: 200px;
+	text-align: center;
+	font-family: "Lato", sans-serif;
+	margin-bottom: 20px;
+	background-color: #1A2F56;
+	color: #ffffff;
+	border: none;
+	outline: none;
+	font-size: 20px;
+}
+#begma_innumerable .innumerable{
+    padding-top: 10px;
+}
+
+#begma_innumerable .innumerable p {
+	color: #192E58;
+	font-family: "Lato", sans-serif;
+	line-height: 29px;
+}
+
+/* begma_facalities design  */
+
+#begma_facalities {
+    padding-bottom: 100px;
+}
+#begma_facalities .begma_experience {
+    text-align: left;
+}
+
+#begma_facalities .begma_experience  .facalities_title {
+    text-align: left;
+}
+#begma_facalities .begma_experience  .facalities_title  h1{
+    text-align: left;
+    font-size: 20px;
+    font-family: "Lato", sans-serif;
+    color: #192E58;
+}
+
+#begma_facalities .begma_experience .facalities_images {
+    text-align: left;
+    margin: 10px 0;
+}
+#begma_facalities .begma_experience .facalities_content {
+    text-align: left;
+    padding: 10px 0;
+}
+#begma_facalities .begma_experience .facalities_content p {
+	font-size: 15px;
+	color: #192E58;
+	line-height: 26px;
+}
+
+
+#begma_news  .begma_news_reaction {
+    display: flex;
+    justify-content: space-between;
+}
+/* begma_news_cpt_section */
+
+#begma_news  .news_begma_facalites{
+    display: flex;
+    justify-content: space-between;
+}
+#begma_news .begma_news_cpt_section  {
+    padding: 40px 0;
+}
+#begma_news .begma_news_cpt_section .begma_news_images_section img {
+    width: 100%;
+}
+#begma_news .begma_news_cpt_section .begma_news_images_section  .news_time {
+    margin-top: 7px;
+}
+#begma_news .begma_news_cpt_section .begma_news_images_section .news_time span {
+	font-family: "Lato", sans-serif;
+	font-size: 17px;
+}
+#begma_news .begma_news_cpt_section .news_title h1 {
+	font-size: 18px;
+	font-weight: bold;
+	margin: 36px 0;
+}
+#begma_news .begma_news_cpt_section  .news_content p {
+    color: #192E58;
+    font-family: "Lato", sans-serif;
+}
+#begma_news .begma_news_cpt_section .news_metabox_text p, #begma_news .begma_news_cpt_section .news_metabox_text i {
+	display: inline;
+	color: #035AA6;
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+	font-size: 16px;
+}
+
+#begma_news .begma_news_default_post {
+	margin-left: 20px;
+    width: 100%;
+	padding: 19px;
+	background-color: #ffffff;
+	box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+	margin: 40px 0;
+}
+
+#begma_news  .begma_news_default_post  .news_begma_time span {
+    font-family: "Lato", sans-serif;
+	font-size: 17px;
+    margin: 5px 0;
+}
+#begma_news  .begma_news_default_post .news_begma_post_title h1 {
+    font-size: 20px;
+	font-weight: bold;
+	margin: 36px 0;
+}
+.excerpt {
+    display: inline;
+	color: #035AA6;
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+	font-size: 16px;
+}
+
+#begma_news  .begma_news_default_post  .news_begma_post_excerpt i {
+    display: inline;
+	color: #035AA6;
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+	font-size: 16px;
+}
+
+
+
+/*====================
+======================begma_daily_digest*/ 
+#begma_daily_digest {
+	padding: 60px 0;
+}
+
+#begma_daily_digest .daily_second_digest{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+#begma_daily_digest .daily_digest_container {
+	background-color: #ffffff;
+}
+#begma_daily_digest .daily_digest_thumbnail {
+	margin-bottom: 15px;
+}
+#begma_daily_digest .daily_digest_thumbnail img{
+	width:100%;
+    height:250px;
+    object-fit:cover;
+}
+#begma_daily_digest .daiy_digest_title {
+	margin-bottom: 15px; 
+}
+#begma_daily_digest .daiy_digest_title h2 {
+ 	font-family: "Lato", sans-serif;
+	font-weight: 500;
+	font-size: 18px;
+}
+#begma_daily_digest .digest_content {
+	margin-bottom: 10px;
+}
+#begma_daily_digest .digest_content p{
+	color: #51607D;
+	font-size: 17px;
+}
+#begma_daily_digest .daily_digest_excerpt i {
+	display: inline;
+	color: #035AA6;
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+	font-size: 16px;
+}

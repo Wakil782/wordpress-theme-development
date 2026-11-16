@@ -1,0 +1,45 @@
+header {
+    background-color: #8bc341;
+    padding: 30px;
+}
+.brand a {
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+
+#single-post{
+    margin-top: 20px;
+}
+.blg-detils, .author {
+     margin-bottom: 20px;
+    padding: 15px;
+    box-shadow: 0 0 15px #ddd;
+}
+.blg-detils  .post-title h2 a  {
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 800;
+}
+.blg-detils .meta {
+    margin-bottom: 10px;
+} 
+.blg-detils .meta p {
+    font-weight: 500;
+} 
+a.readmore{
+    text-decoration: none;
+    color: #000;
+    padding: 10px;
+}
+a.readmore:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.blg-detils .post-excerpt {
+   margin-bottom: 10px;
+}
+.blg-detils .al-meta {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+}

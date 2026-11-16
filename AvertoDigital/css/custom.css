@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.avertodigital_class {
+    color: #ffffff;
+	font-size: 18px;
+	font-family: var(--secondary-font);
+}
+:root {
+    --primary-font: "Roboto";
+    --secondary-font: sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Roboto"
+}
+p {
+    font-family: sans-serif;
+}
+
+#all_header_content {
+    padding: 10px;
+    background: #000000;
+}
+#all_header_content .col-md-5 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#all_header_content .avertoditital_logo {
+    width: 100%;
+    height: auto;
+}
+#all_header_content .avertoditital_logo img {
+	width: 123px;
+	height: 70px;
+	overflow: hidden;
+    display: block;
+}
+#all_header_content .col-md-7 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#all_header_content nav #main_menu {
+    
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+#all_header_content nav #main_menu li {
+    display: flex;
+    gap: 20px;
+    display: inline-block;
+    position: relative;
+}
+#all_header_content nav #main_menu li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 17px;
+    font-family: var(--primary-font);
+    font-weight: 700;
+    margin-left: 25px;
+    transition: 0.5s;
+}
+#all_header_content nav #main_menu li a:hover {
+    color: #261CC1;
+}
+#all_header_content nav #main_menu li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 180px;
+    z-index: 9999;
+    padding: 10px 0;
+    background-color: #000000;
+    padding-top: 10px;
+}
+#all_header_content nav #main_menu li:hover ul {
+    display: block;
+}
+
+#all_header_content nav #main_menu li.current-menu-item a,
+#all_header_content nav #main_menu li.current_page_item a {
+    color: #261CC1;
+}
+/* Header Area Ends Here ========================
+================================================= */
+
+.first_section{
+    height: 700px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.first_section .title {
+    margin: 20px 0;
+    text-align: center;
+}
+.first_section .title h1 {
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 60px;
+    font-family: var(--primary-font);
+    text-transform: uppercase;
+}
+
+.first_section .home_text {
+    margin: 10px 0;
+    text-align: center;
+}
+.first_section .home_text p{
+    color: #ffffff;
+    padding: 0;
+    margin: 0;
+    font-size: 25px;
+    line-height: 1.2;
+    font-family: var(--primary-font);
+}
+.first_section .avertodigital_agency {
+    display: flex;
+    margin-top: 10px;
+}
+.first_section .avertodigital_agency button {
+	padding: 7px 18px;
+	background: none;
+	border: 1px solid #261CC1;
+	font-size: 18px;
+	border-radius: 5px;
+	color: #261CC1;
+	margin-left: 15px;
+    transform: scale(1);
+    transition: transform 0.4s ease-in;
+}
+.first_section .avertodigital_agency button:hover {
+	transform: scale(1.1);
+}
+.first_section .avertodigital_agency .button1 {
+	background-color: #261CC1;
+    color: #ffffff;
+    font-family: var(--primary-font);
+}
+
+
+#avertodigital_home_section   #second_home_section {
+    background-color: #000000;
+    padding: 40px;
+}
+#avertodigital_home_section   #second_home_section .core_strength .first_strength{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#avertodigital_home_section   #second_home_section .core_strength .first_strength .our_core {
+    text-decoration: none;
+    font-family: var(--secondary-font);
+    text-transform: capitalize;
+    font-size: 20px;
+    color: #261CC1;
+}
+#avertodigital_home_section #second_home_section .core_strength .first_strength h1 {
+	color: #ffffff;
+	text-transform: uppercase;
+	font-size: 40px;
+}
+#avertodigital_home_section #second_home_section .core_strength .first_strength .web_development {
+	color: #ffffff;
+	font-size: 18px;
+	font-family: var(--secondary-font);
+}
+#second_home_section  .strategic .strategic_section  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#second_home_section  .strategic .strategic_section  .strategic_culture {
+    text-align: center;
+}
+#second_home_section .strategic .strategic_section .strategic_culture h2 {
+	color: #ffffff;
+	text-align: center;
+	margin-top: 4px;
+	font-size: 22px;
+    font-family: var(--secondary-font);
+}
+#second_home_section  .strategic .strategic_section  .strategic_culture img{
+    width: 102px;
+    height: 84px;
+}
+  

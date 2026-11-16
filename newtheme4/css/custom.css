@@ -1,0 +1,212 @@
+
+h1 {
+    padding: 0;
+    margin: 0;
+}
+header {
+    padding: 20px 0;
+    margin-bottom: 10px;
+}
+.brand h1 a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+    line-height: 1em;
+    font-weight: 750;
+    font-size: 25px;
+}
+
+
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+
+}
+nav ul li a {
+    text-transform: uppercase;
+    display: block;
+    text-decoration: none;
+    color: #000;
+    line-height: 1em;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 24px 10px;
+    transition: 0.5s;
+}
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    z-index: 999;
+    background-color: #ffffff;
+    white-space: nowrap;
+    transition: 0.5s;    
+
+}
+nav ul li:hover > ul {
+    display: block;
+    transition: 0.9s;
+}
+nav ul  ul li  {
+    display: block;
+
+}
+nav ul  ul li a  {
+    padding: 15px 15px;
+
+}
+nav ul  ul li a:hover  {
+    background-color: rgba(0, 0, 0, 0.1); 
+    color: #000;
+}
+
+.new-form {
+    padding: 24px 0;
+}
+
+.new-time {
+    margin-left: 90px;
+    margin-bottom: 20px;
+}
+
+.new-time .meta-time {
+    padding: 20px ;
+    border-right: 1px solid rgba(0, 0, 0, 0.4);
+}
+.all-new-posts {
+    margin-left: 30px;
+}
+.all-index-posts {
+    margin-right: 20px;
+    background-color: #ffffff;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+.post-thumb {
+    margin-bottom: 10px;
+}
+.post-thumb img {
+    width: 100%;
+    height: auto;
+}
+.title {
+    margin-bottom: 10px;
+}
+.title h1 a {
+    color: #000;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+}
+.meta  {
+    margin-bottom: 10px;
+}
+.meta a {
+    color: #000;
+}
+
+.all-single-queryhere {
+    display: flex;
+}
+.excerpt {
+    margin-bottom: 25px;
+}
+hr {
+    margin-bottom: 10px;
+}
+
+.site-identity {
+    display: flex;
+    justify-content: space-between;
+
+}
+ 
+.site-identity a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px; /* টেক্সটের নিচে বাইরে রাখার জন্য */
+  width: 100%;
+  height: 2px;
+  background: transparent;
+  transition: background 0.3s, bottom 0.3s;
+}
+
+.site-identity a:hover::after {
+  background: #0073aa; /* hover করলে underline দেখা যাবে */
+  bottom: -8px;        /* আরও বাইরে চলে যাবে */
+}
+#all-single-posts {
+  color: #fff;
+}
+
+.post-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4); /* হালকা ডার্ক লেয়ার */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 1;
+}
+
+.post-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 2;
+  text-align: center;
+}
+.post-meta span a {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+}
+.post-meta .title {
+	font-size: 34px;
+	margin: 0;
+	color: #000000;
+}
+.post-meta .category {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffd700;
+}
+
+
+.post-meta .details {
+	display: flex;
+	gap: 15px;
+	font-size: 14px;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	color: #000000;
+	font-size: 17px;
+	margin-top: 15px;
+    font-family: 600;
+}
+.all-content {
+    margin-top: 30px;
+}
+
+
+
+
+

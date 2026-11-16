@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+a {
+    text-decoration: none;
+}
+body {
+    background-color: #273035;
+    font-family: "Ubuntu Mono", monospace;;
+}
+
+#wrap {
+    width: 940px;
+    margin: 0 auto;
+}
+.brand {
+    text-align: center;
+    padding: 40px 0;
+}
+.brand a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 40px;
+}
+nav {
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+    border-radius: 10px;
+
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li {
+    display: inline-block;
+    position: relative;
+    padding: 15px 10px;
+}
+nav ul li  a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 15px;
+    padding: 15px 10px;
+}
+nav ul li  a:hover{
+    color: rgba(255, 255, 255, 0.5);
+
+}
+nav ul  ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.7);;
+    width: 200px;
+    z-index: 999;
+}
+nav ul li:hover > ul {
+    display: block;
+}
+nav ul ul li {
+    display: block;
+}
+nav ul ul li a {
+    padding: 20px 10px;
+}
+nav ul  ul ul {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+nav ul  ul li:hover ul {
+    display: block; 
+}
+#all-posts {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+}
+.all-index-posts {
+    background-color: rgba(0, 0, 0, 0.9);   
+    padding: 0 10px;
+
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+.all-index-posts .post-thumb {
+    margin-bottom: 10px;
+}
+.all-index-posts .post-thumb img {
+    width: 375px;
+    height: 270px;
+}
+.all-index-posts .title {
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.all-index-posts .title h1 a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 18px;
+}
+.all-index-posts .title a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+}
+.all-index-posts .meta {
+    margin-bottom: 10px;
+}
+.all-index-posts .meta p {
+    color: rgba(255, 255, 255, 0.5);
+}
+.all-index-posts .meta p a {
+    text-decoration: none;
+}
+.all-index-posts .content {
+    margin-bottom: 10px;
+    text-decoration: dotted;
+    border-bottom: 3px dotted #fff;
+}
+.all-index-posts .content p {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.7);
+}
+.all-index-posts .tags {
+    margin: 10px 0;
+ }
+ .all-index-posts .tags a {
+    text-decoration: none;
+ }
+ .all-index-posts  .edit {
+    margin-bottom: 10px;
+ }
+.all-index-posts  .edit  a{
+    text-decoration: none;
+ }
+.all-index-posts .next-post {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.wp-block-search__inside-wrapper {
+    margin: 10px 0;
+  }
+ .wp-block-search__inside-wrapper [type="search"] {
+    border-radius: 20px;
+ }
+ .wp-block-search__inside-wrapper  .wp-block-search__button {
+    border-radius: 15px;
+ }
+.new-sidebar {
+    margin-bottom: 15px;
+} 
+
+
+
+
+.comment-box {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    border-bottom: 1px dotted #ccc;
+    padding-bottom: 15px;
+}
+
+.comment-avatar img {
+    border-radius: 50%;
+}
+
+.comment-author {
+    margin: 0;
+    font-size: 16px;
+    color: #fff;
+}
+
+.comment-time {
+    font-size: 12px;
+    color: #aaa;
+}
+
+.comment-text {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #ddd;
+}
+

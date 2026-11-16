@@ -1,0 +1,31 @@
+a.nav-link {
+    color: #000;
+    font-weight: 600;
+}
+ul li.current-menu-item > a {
+    color: blue;
+}
+
+#mainmenu  #menu-main-menu .dropdown-menu .nav-item {
+    padding: 5px 0;
+    border: 1px;
+    font-weight:600;
+}
+#mainmenu  #menu-main-menu .dropdown-menu .nav-item a {
+    font-weight:600;
+}
+
+.footer {
+    background-color: #000;
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+    margin-top: 5px;
+}
+.footer p{
+  color: #fff;
+}
+
+.footer p span{
+  font-style: italic;
+}

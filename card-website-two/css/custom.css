@@ -1,0 +1,37 @@
+.post_thumb a {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #007bff; /* তোমার পছন্দমত কালার */
+}
+.new_post {
+    height: 660px;
+    /* width: 840px; */ /* এই লাইনটা সরিয়ে দাও বা কম্প্রোমাইজড রাখো */
+    width: 100%; /* অথবা auto */
+    box-sizing: border-box;
+    padding: 15px;
+    border: 1px solid #ddd; /* চাইলে */
+    margin-bottom: 30px;
+}
+div.nav-links a.page-numbers {
+  background-color: #007bff;  /* ব্লু ব্যাকগ্রাউন্ড */
+  color: #fff;                /* সাদা টেক্সট */
+  font-size: 18px;            /* ফন্ট সাইজ বড় */
+  border: none;               /* বর্ডার সরিয়ে দেয়া */
+  margin: 0 4px;              /* লিংক গুলোর মাঝে স্পেস */
+  padding: 8px 14px;          /* প্যাডিং ঠিক করা */
+  border-radius: 5px;         /* কর্নার গোলাকার */
+  transition: background-color 0.3s ease;
+}
+
+div.nav-links a.page-numbers:hover,
+div.nav-links a.page-numbers:focus {
+  background-color: #0056b3;  /* হোভার কালার ডার্ক ব্লু */
+  color: #fff;
+  text-decoration: none;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+

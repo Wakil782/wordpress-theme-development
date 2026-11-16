@@ -1,0 +1,198 @@
+
+body {
+    background-image: url('../img/blog-header.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;    
+}
+header {
+    margin-top: 15px;
+}
+header .brand a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 50px;
+    transition: 0.3s;
+}
+header .brand a:hover {
+   color: orange;
+}
+header nav .main-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+header nav .main-menu li {
+   padding: 25px 0;
+}
+header nav .main-menu li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 800;
+  transition: 0.3s;
+}
+header nav .main-menu li a:hover {
+  color: orange;
+}
+/* logo-title-area */
+#logo-title-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;  
+  margin-top: 180px;
+  margin-bottom: 50px;
+}
+
+#logo-title-area h1, #logo-title-area  p {
+  text-align: center;
+  font-weight: 800;
+  color: #ffffff;
+}
+#post-details {
+    background-color: #ffffff;
+}
+#post-details .post-title {
+    margin-top: 20px;
+}
+#post-details .post-title h1 a {
+    text-decoration: none;
+    color: #000000;
+    transition: 0.3s;
+}
+#post-details .post-title h1 a:hover {
+   color: orange; 
+}
+#post-details .post-thumbnail img {
+   width: 100%;
+   height: auto;
+   margin-bottom: 10px;
+}
+
+.meta .all-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.meta .all-meta a {
+    text-decoration: none;
+}
+.meta .all-meta .author{
+    color:orange;
+}
+
+i {
+    color: orange;
+}
+.meta .all-meta .no-comments {
+    margin-bottom: 10px;
+}
+a.Readmore {
+    color: #ffffff;
+    background-color: orange;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+a.Readmore:hover {
+    background-color: #337ab7;
+    color: #ffffff;
+
+}
+
+#post-details .new-sidebar {
+    margin-top: 20px;
+}
+.new-sidebar .new {
+    margin-bottom: 10px;
+}
+.new-sidebar .new  ul {
+    list-style: none;
+    padding: none;
+    margin: 0;
+}
+
+.new-sidebar .new  ul li {
+   padding: 10px 0; 
+}
+
+.new-sidebar .new  ul li a{
+   text-decoration: none;
+   color: #000000;
+   position: relative;
+   padding-left: 20px; 
+   transition: 0.3s;
+   display: inline-block;   
+}
+.new-sidebar .new  ul li a:hover{
+  transform: translateX(10%); 
+}
+.new-sidebar .new  ul li a::before{
+    content: "\f105";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.the-tags {
+    margin-bottom: 20px;
+}
+.the-tags a {
+    text-decoration: none;
+    color: #000000;
+}
+.author{
+    background-color: rgba(0,0,0,0.1);
+    padding: 30px;
+
+}
+.author img{
+ border-radius: 50%;
+ margin-right: 20px;
+}
+.comments {
+    margin-top: 20px;
+}
+#all-posts h2 {
+    margin: 20px 0;
+}
+
+#all-posts ul {
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+#all-posts ul li {
+  display: inline-block;
+  margin: 5px;
+    
+}
+#all-posts ul li a {
+  text-decoration: none;
+  color: white;
+  background-color: #337ab7;
+  padding: 10px 20px;
+    
+}
+#all-posts ul li a:hover {
+ color: orange;
+    
+}
+.footer {
+    padding: 20px 10px;
+    background-color: #000000;
+}
+.footer p {
+  text-align: center;
+  color: #ffffff;
+}
